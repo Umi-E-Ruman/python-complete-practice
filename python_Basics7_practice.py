@@ -1,12 +1,11 @@
-
 try:
     marks = float(input("Enter your Marks: "))
 except ValueError:
     print("Please enter a valid number.")
     raise SystemExit
 if marks<0 or marks>100 :
-    print("Marks does not lies in valid range")
-if marks>=90:
+    print("Marks does not lie in valid range")
+elif marks>=90:
     print("Your grade is A")
     print("Exceptional")
 
@@ -21,8 +20,8 @@ elif marks>=70:
 elif marks>=60:
     print("Your grade is D")
     print("Need to improve")
-
-else marks>=0:
+    
+else:
     print("Your grade is F")
     print("Fail")
 
